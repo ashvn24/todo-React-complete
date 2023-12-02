@@ -37,7 +37,7 @@ function List({Input, setInput}) {
       <form onSubmit={addTodo}>
         <div className='group'>
         <input className={edit?'text2':'text'} type="text" value={Input} placeholder='Enter your todo' onChange={(event)=>setInput(event.target.value)} />
-        <button className={`btns btn mb-1 ms-2 text-light  ${edit?'btn-warning':'btn-success'} btn-sm`}>{edit?'UPDATE':'ADD'}</button>
+        <button className={`btns btn mb-1 ms-2 text-light  ${edit?'btn-warning':'btn-success'} btn-sm`}>{edit?'EDIT':'ADD'}</button>
         </div>
     </form>   
         <div>
