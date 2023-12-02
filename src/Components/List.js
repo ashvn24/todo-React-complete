@@ -13,7 +13,7 @@ function List({Input, setInput}) {
     const addTodo=(event)=>{
         event.preventDefault();
         const todoExists= todo.find((to)=>to.list===Input);
-        if (todoExists){
+        if (todoExists && edit===null){
           alert('Item already exists')
           return;
         }
